@@ -11,6 +11,7 @@
 class Solution {
 public:
     ListNode* deleteDuplicates(ListNode* head) {
+        // slow and fast pointer approach
         ListNode* temp=head;
         if(!(temp)) return NULL;
         while(temp!=NULL&&temp->next!=NULL){
