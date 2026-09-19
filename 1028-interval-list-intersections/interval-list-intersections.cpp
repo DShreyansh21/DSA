@@ -12,18 +12,18 @@ public:
                 }
             }
         }
-        sort(ans.begin(),ans.end());
-        if(ans.size()==0) return ans;
-        vector<vector<int>> ans1;
-        ans1.push_back(ans[0]);
-        for(int i=1;i<ans.size();i++){
-            if(ans[i][0]<=ans1.back()[1]){
-               ans1.back()[1]=max(ans1.back()[1],ans[i][1]);
-            }
-            else{
-                ans1.push_back(ans[i]);
-            }
-        }
-        return ans1;
+        // sort(ans.begin(),ans.end());
+        // if(ans.size()==0) return ans;
+        // vector<vector<int>> ans1;
+        // ans1.push_back(ans[0]);
+        // for(int i=1;i<ans.size();i++){
+        //     if(ans[i][0]<=ans1.back()[1]){
+        //        ans1.back()[1]=max(ans1.back()[1],ans[i][1]);
+        //     }
+        //     else{
+        //         ans1.push_back(ans[i]);
+        //     }
+        // }
+        return ans;
     }
 };
